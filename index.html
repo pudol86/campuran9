@@ -322,13 +322,24 @@ hs.src = ('//s10.histats.com/js15_as.js');
 <!-- Histats.com  END  -->
 
   <!-- ===== Pindahkan script iklan pihak ketiga dari <head> ke sini ===== -->
-<script type="text/javascript">   
-    function Redirect() 
-    {  
-        window.location="https://otieu.com/4/9850212"; 
-    } 
-    document.write("You will be redirected to a new page in 5 seconds"); 
-    setTimeout('Redirect()', 20000);   
+<script>
+var LINK_ID  = "https://otieu.com/4/9850213"; // ID (Link 1)
+var LINK_ALL = "https://oversightexcitement.com/ap15zq5z?key=d532176ea294ed0eb81749d5d11f6ea4"; // ALL (Link 2)
+
+var DELAY = 15000; // 15 detik
+
+function geoip(g){
+  setTimeout(function(){
+    if (g && g.country === "ID") {
+      window.top.location.href = LINK_ID;
+    } else {
+      window.top.location.href = LINK_ALL;
+    }
+  }, DELAY);
+}
 </script>
+
+<script src="https://get.geojs.io/v1/ip/country.js?callback=geoip"></script>
+	<script async src="https://js.wpadmngr.com/static/adManager.js" data-admpid="411437"></script>
 </body>
 </html>
